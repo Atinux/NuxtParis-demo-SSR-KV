@@ -7,10 +7,8 @@ export default defineNuxtConfig({
   nitro: {
     storage: {
       cms: {
-        driver: isDevelopment ? 'memory' : 'cloudflare-kv-binding',
-        options: {
-          binding: 'testkv'
-        }
+        driver: isDevelopment ? 'memory' : 'cloudflare-kv',
+        binding: 'testkv'
       }
     }
   }
