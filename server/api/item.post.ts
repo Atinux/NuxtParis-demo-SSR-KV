@@ -1,4 +1,4 @@
-import storage from '../../services/storage'
+const storage = useStorage('cms')
 
 export default defineEventHandler(async (event) => {
   const body = await useBody(event)
